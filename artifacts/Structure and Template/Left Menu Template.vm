@@ -1,0 +1,61 @@
+#set ($layoutId = $request.get("theme-display").get("plid"))
+#set($layoutService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalService"))
+#set ($layoutLong = $getterUtil.getLong($layoutId))
+#set($layout = $layoutService.getLayout($layoutLong))
+#set ($pageName = $layout.getName($locale))
+
+#set($url = $request.attributes.FRIENDLY_URL)
+#set ($url_array = $url.split("%20%3E%20"))
+#set ($last_index = $url_array.size() - 1)
+
+#set($url_first = $url_array.get($last_index) )
+#set($url_last_index = $url_first.replaceAll('%20',' '))
+
+#set($foo = "false")
+#set($noChildActive = "")
+
+#if (!$title.getSiblings().isEmpty())
+    #set($foo = "true")
+    #foreach ($cur_title in $title.getSiblings())
+    	#if ($cur_title.getData() == $pageName )
+    	    #set($foo = "false") 
+    	#end
+    #end
+    
+    
+    #if($reserved-article-title.data.toUpperCase() == $pageName.toUpperCase())
+        #set($noChildActive = "active")
+    #end
+    
+    #set($linkToParent = $Link_to_parent.getFriendlyUrl())
+    
+    <h3 class='submenuheader $noChildActive #if($foo == "false") active #end'>
+        #if($validator.isNotNull($linkToParent))
+	        <a href="$Link_to_parent.getFriendlyUrl()">
+	            $reserved-article-title.data
+	            
+	            #if ( !($title.getSiblings().size() == 1 && $title.getSiblings().get(0).data.isEmpty()) )
+	                <span class="menu-header-plus-sign">+</span>
+	                <span class="menu-header-minus-sign">-</span>
+	            #end
+	        </a>
+	    #else
+            $reserved-article-title.data
+            #if ( !($title.getSiblings().size() == 1 && $title.getSiblings().get(0).data.isEmpty()) )
+                <span class="menu-header-plus-sign">+</span>
+                <span class="menu-header-minus-sign">-</span>
+            #end
+	    #end
+    </h3>
+    #if ( !($title.getSiblings().size() == 1 && $title.getSiblings().get(0).data.isEmpty()) )
+    <div class="submenu #if($foo == "true") hide #end">
+	    <ul>
+    	#foreach ($cur_title in $title.getSiblings())
+        	  <li><a href="$cur_title.link.getFriendlyUrl()" #if ($cur_title.getData() == $pageName || $cur_title.getData() == $url_last_index) class="active" #end>$cur_title.getData()</a></li>
+        	  
+    	#end
+    
+    	</ul>
+    </div>
+    #end
+#end

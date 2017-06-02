@@ -1,0 +1,28 @@
+<!--#foreach($cur_page in $pageLink.getSiblings())
+    $cur_page.getFriendlyUrl()
+    #foreach($cur_pageLabel in $cur_page.getChild('pageLabel').getSiblings())
+        $cur_pageLabel.getData()
+    #end
+#end-->
+
+#if (!$pageLink.getSiblings().isEmpty())
+    <div class="newsletter-list-component">
+    	#foreach ($cur_pageLink in $pageLink.getSiblings())
+    	    <div class="newsletter-list-item">
+        		<a href="$cur_pageLink.getFriendlyUrl()">
+        			#if (!$cur_pageLink.getChild('linkLabel').getSiblings().isEmpty())
+        	            #foreach ($cur_linkLabel in $cur_pageLink.getChild('linkLabel').getSiblings())
+        	                $cur_linkLabel.getData()
+        	            #end
+                    #end
+        		</a>
+    		</div>
+    	#end
+	</div>
+#end
+
+<!--<h3>${pageLink.getFriendlyUrl()}</h3>-->
+
+<!--<a href="${pageLink.getFriendlyUrl()}">
+	Link
+</a>-->

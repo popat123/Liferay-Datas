@@ -1,0 +1,77 @@
+#if(!$entries.isEmpty())
+<div class="homevideobox">
+		#set($renderer = $entry.getAssetRenderer() )
+	 
+                            
+			#set($className = $renderer.getClassName() )
+			#if( $className == "com.liferay.portlet.journal.model.JournalArticle" )
+				#set( $journalArticle = $renderer.getArticle() )
+
+						#set( $document = $saxReaderUtil.read($journalArticle.getContent()) )
+						#set( $rootElement = $document.getRootElement() )
+						
+						#set( $xPathDescription = $saxReaderUtil.createXPath("dynamic-element[@name='description']") )
+						#set( $xPathSelectorImages = $saxReaderUtil.createXPath("dynamic-element[@name='image']") )
+						#set( $xPathVideoUrl = $saxReaderUtil.createXPath("dynamic-element[@name='video_url']") )
+						#set( $image = $xPathSelectorImages.selectSingleNode($rootElement).getStringValue().trim() )
+						#set( $videoUrl = $xPathVideoUrl.selectSingleNode($rootElement).getStringValue().trim() )
+						#set( $description = $xPathDescription.selectSingleNode($rootElement).getStringValue().trim() )
+						
+						<div class="dis-video" id="div_video">
+							<video autoplay="true" controls="" id="videoHome" poster="$image" height="207" width="100%">&nbsp;</video>
+						</div>
+	
+
+        #if($image.contains(".jpg"))
+            #set($modifiedUrl = $image.substring(0, $image.lastIndexOf(".jpg")))
+            #end
+            #set( $a = ".jpg" )
+		
+						<script>
+						YUI().use('node', function (Y) {	
+							
+							function loadVideo(videoPath, posterPath){
+							
+								var varFilePath = videoPath;
+
+								if ((navigator.userAgent.match(/iPhone/i) == "iPhone") || (navigator.userAgent.match(/iPod/i) == "iPod") || (navigator.userAgent.match(/Android/i) == "Android") || (navigator.userAgent.match(/iPad/i) == "iPad")) {
+									varFilePath = varFilePath.replace("/manifest.f4m", "/playlist.m3u8")
+									Y.one("#videoHome").empty();
+									Y.one("#videoHome").setHTML("<source src='" +varFilePath+"' type='video/mp4'>");
+								}
+								else {
+									var parameters = {
+										src: varFilePath,
+										autoPlay: "false",
+										verbose: true,
+										controlBarAutoHide: "true",
+										controlBarPosition: "bottom",
+										poster: posterPath,
+										scaleMode: "stretch",
+										loop: true,
+										bufferingOverlay: false
+									};
+									swfobject.embedSWF( "/newsletter-theme/swf/StrobeMediaPlayback.swf", "videoHome", "100%", 207, "10.3.0", "expressInstall.swf", parameters, {
+												allowFullScreen: "true",
+												wmode: "transparent"
+											},
+											{
+												name: "video11"
+											});
+								}
+							}
+
+							loadVideo("$videoUrl","$modifiedUrl$a");
+							
+						});
+						</script>
+         		
+                  
+							$description<br>
+						<a href="/group/guest/video-stories">View more videos>></a>
+					
+					
+    #end
+    
+</div>
+#end
