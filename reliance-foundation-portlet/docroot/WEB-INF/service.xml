@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.jio.portlet.gallery">
+	<author>Reliance</author>
+	<namespace>rf</namespace>
+
+	<entity name="Gallery" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="galleryId" type="long" primary="true" id-type="increment" />
+
+		<!-- Other fields -->
+
+		<column name="type" type="String" />
+		<column name="thumbnailName" type="String" />
+		<column name="name" type="String" />
+		<column name="mainCategory" type="String" />
+		<column name="projectImagesPath" type="String" />
+		<column name="galleryImagesId" type="Long" />
+		<column name="VideoImagesId" type="Long" />
+		<column name="thumbnailImagesId" type="Long" />
+		<column name="isVideo" type="boolean" />
+		<column name="isIMG" type="boolean" />
+		<column name="youTubeLink" type="boolean" />
+		<column name="videosImagPriority" type="boolean" />
+		<column name="gallryImagPriority" type="boolean" />
+		<column name="demoLink" type="String" />
+		<column name="liveLink" type="String" />
+		<column name="number" type="long" />
+
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		
+		<order by="desc">
+			<order-column name="number"></order-column>
+		</order>
+		
+		<finder return-type="Collection" name="VideoPriority">
+		<finder-column name="videosImagPriority"></finder-column>	
+		</finder>
+		
+		<finder return-type="Collection" name="ImagePriority">
+		<finder-column name="gallryImagPriority"></finder-column>			
+		</finder>
+						
+	</entity>
+</service-builder>
