@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.jio.portlet.mentors.model.impl.MentorsModelImpl">
+		<attributes>
+			<id name="mentorsId" />
+			<basic name="name" />
+			<basic name="companyName" />
+			<basic name="category" />
+			<basic name="mentorImage" />
+			<basic name="shortDescription" />
+			<basic name="longDescription" />
+			<basic name="number">
+				<column name="NUMBER_" />
+			</basic>
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.jio.portlet.mentors.model.impl.MentorsImpl" name="Mentors">
+		<table name="gn_Mentors" />
+		<attributes />
+	</entity>
+</entity-mappings>
