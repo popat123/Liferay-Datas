@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.jio.portlet.jurys.model.Jurys" />
+	<class name="com.jio.portlet.jurys.model.impl.JurysImpl" table="GnNext_Jurys">
+		<cache usage="read-write" />
+		<id name="jurysId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="companyName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="category" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="juryImage" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="shortDescription" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="longDescription" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="number" type="com.liferay.portal.dao.orm.hibernate.LongType" column="number_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>
