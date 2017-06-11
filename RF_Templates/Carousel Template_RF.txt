@@ -1,0 +1,25 @@
+   <section class="fullwidth flexslider no-css-transition" id="homeSlider">
+<ul class="unstyled slides clearfix">
+#if (!$Sort_Description.getSiblings().isEmpty())
+	#foreach ($cur_Sort_Description in $Sort_Description.getSiblings())
+		
+
+	    <li class="fl no-css-transition">
+	    #if(!$cur_Sort_Description.Link_to_Page2197.getFriendlyUrl().isEmpty())
+    	    <a href="$cur_Sort_Description.Link_to_Page2197.getFriendlyUrl()" target="_blank" style="text-decoration:none;">
+    	    <img alt="Empowering India by Reliance Foundation" src="$cur_Sort_Description.Image2308.getData()" />
+    	    <div class="wrap">
+    	    <p>$cur_Sort_Description.getData()</p>
+    	    </div>
+    	    </a>
+	    #else
+    	    <img alt="Empowering India by Reliance Foundation" src="$cur_Sort_Description.Image2308.getData()" />
+    	    <div class="wrap">
+    	    <p>$cur_Sort_Description.getData()</p>
+    	    </div>
+	    #end
+	    </li>
+	#end
+#end
+</ul>
+</section>

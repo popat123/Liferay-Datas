@@ -1,0 +1,29 @@
+
+
+1016136929
+
+
+Request to Quality Analysis(QA) for GenNext CMS Project
+Dear Team,
+
+Kindly provide us to access to creation database & table on this server 10.128.28.130 and We provide UserID and Password based on Database for GenNext CMS project.  
+Please let me know if you any queries.    
+
+Ashish Sir: kindly approve this request.
+
+Regards,
+Pankaj Sharma(Liferay Consultant)
+
+
+Dear Team,
+
+Please install Oracle 12c on this blow server.
+IP: 10.128.28.95
+
+Dear idc operation team : Please provide PIM access for one server to below list of users.
+
+1. Pankaj Sharma(Pankaj15.Sharma)
+2. Rajnikant Donga(Rajnikant.Donga)
+
+Regards,
+Pankaj Sharma(Liferay Consultant)

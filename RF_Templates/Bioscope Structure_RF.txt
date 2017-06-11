@@ -1,0 +1,55 @@
+    
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" localizable="true" name="Image1943" readOnly="false" repeatable="true" required="false" showLabel="true" type="wcm-image" width="">
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="description" readOnly="false" repeatable="false" required="false" showLabel="true" type="textarea" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Description]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="keyword" localizable="true" name="pdf" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-documentlibrary" width="">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Bioscope PDF]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="date" fieldNamespace="ddm" indexType="keyword" localizable="true" name="Date2439" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-date" width="small">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Date]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Image]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>
