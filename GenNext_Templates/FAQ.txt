@@ -1,0 +1,119 @@
+     <section class="faq" id="faq">
+<div class="callbacks_container" id="top">
+<div class="container">
+<h2><img alt="" src="/genNext-theme/images/img/a-bg.png" />Frequently Asked Questions</h2>
+<!-- Accordian --><!--accordion -->
+
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading actives">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">What is GenNext Hub? </a></h4>
+</div>
+
+<div class="panel-collapse collapse in" id="collapseOne">
+<div class="panel-body">GenNext Hub helps startups scale up to a minimum viable company by providing them with the critical resources that they need. It has a 4-month immersive program where startups gain access to funding, business mentors, technical and design experts, plug and play office space and other resources.<br />
+Microsoft Ventures supports GenNext Hub in working with the entrepreneurs and helps them with technology mentoring. Startups also get access to Microsoft business units for product feedback, marketing and technical guidance including Microsoft BizSpark program.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">What will I get out of the GenNext Hub program? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseTwo">
+<div class="panel-body"><strong>Funding:</strong> We provide an option for startups to take investments from us during the early part of the program. At the same time, we also conduct funding workshops and closed door interactions for startups with prominent investors from the ecosystem.<br />
+<br />
+<strong>Mentorship:</strong> Our pool of mentors include successful entrepreneurs, prolific investors, industry experts and RIL business leaders with diverse experiences to help you scale up your business. In addition, executives and technical experts from Microsoft are available on a regular basis to provide early feedback and opportunities to the startups.<br />
+<br />
+<strong>RIL Connect:</strong> We facilitate engagement with RIL business units when we believe the startup is ready and there are synergies that could result in a pilot test. However, the RIL business unit and the startup will finally determine the nature and extent of such a mutual engagement.<br />
+<br />
+<strong>Resources:</strong> We provide you with a plug and play co-working space for the duration of the program to help you create a robust and scalable business. Startups also get access to Microsoft business units for product feedback, marketing and technical guidance including Microsoft BizSpark program.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">How is the program structured? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseThree">
+<div class="panel-body">It is a 4-month long immersive and structured program. We have a range of activities and events that include investor connect, mentor program, speaker series, media coverage and workshops/sessions on topics such as customer development, product management, operational plan development, etc. <a href="https://www.youtube.com/watch?v=n0UxM6sZ4_0" target="_blank">Click here </a>to listen to what the startups have to say about our program.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">What is the selection criteria for the program? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseFour">
+<div class="panel-body">We select startups based on their team, technology, market opportunity, scalability and alignment with our value pools. Ideally, the startup should be a registered entity, have a strong founding team consisting of a mix of business and technical expertise with some market traction.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseFive">Do you think our company is too early / too late to apply? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseFive">
+<div class="panel-body">Preferably, the startup should have achieved product market fit and be ready for scale up. For example, a B2B startup should have 3+ paying customers and a B2C startup should have 1000+ users. However nothing is too far along or too early. Each startup is important to us and we look at each application on a case-to-case basis.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseSix">What is the commitment required from a startup? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseSix">
+<div class="panel-body"><strong>Time:</strong> At least one co-founder is expected to attend the sessions spread over 4 months on a one-week per month basis plus one-week for Demo Day. They will also have to be available for the weekly review meetings in person/call/video conference. The team can work from the co-working space for the duration of the program subject to a maximum of 4 members per startup.<br />
+<strong>Cost:</strong> We do not charge any fee for the program. However, startups need to make their own boarding, lodging &amp; travel arrangements.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseSeven">How will my IP be protected? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseSeven">
+<div class="panel-body">Once selected for the program, we will sign a startup accelerator agreement which covers the confidentiality clause. We don’t stake a claim on any IPs developed by the company before, during or after the program.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseEight">How does GenNext Hub help me raise funding for my startup? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseEight">
+<div class="panel-body">We provide an option for startups to take investments from us during the early part of the program. At the same time, we also conduct funding workshops and closed door interactions for startups with prominent investors from the ecosystem.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseNine">We don’t need funding. Can I still participate in the program? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseNine">
+<div class="panel-body">Yes, you can. We understand that not all startups require funding.</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTen">Where will the program take place? </a></h4>
+</div>
+
+<div class="panel-collapse collapse" id="collapseTen">
+<div class="panel-body">The program will be based out of GenNext Hub located in the Reliance Corporate Park (RCP) state-of-the-art facility in Navi Mumbai.<br />
+<a href="https://www.google.com/maps/place/GenNext+Innovation+Hub/@19.1311593,73.0024592,17z/data=!3m1!4b1!4m2!3m1!1s0x3be7c0b0043f4c2d:0x167b78b414f9291c?hl=en-US" target="_blank">Click here for the location on the map</a></div>
+</div>
+</div>
+</div>
+<!-- accordion --></div>
+</div>
+</section>

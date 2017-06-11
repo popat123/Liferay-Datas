@@ -1,0 +1,29 @@
+    <section class="startups block" style="background: #fff;">
+        <div class="container">
+            <h2><img src="/genNext-theme/images/img/a-bg.png" alt="">PARTNERS</h2>
+            
+            <div class="row">
+            
+            	<div class="col-sm-12 text-center">
+                	<div class="mainpartner">
+                            <a href="$main_partner_link.getData()" target="_blank">
+                                <img src="$Image1656.getData()" class="wow margbottom25" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                            </a>
+                    </div>
+                </div>
+            
+            </div>
+
+			<div class="row">       
+				#if (!$Partners_Image.getSiblings().isEmpty())
+	            #foreach ($cur_Partners_Image in $Partners_Image.getSiblings())
+		    <div class="col-sm-15">
+					<a href="$cur_Partners_Image.Partners_Link.getData()" target="_blank">
+						<img src="$cur_Partners_Image.getData()" class="img-responsive wow margbottom25" data-wow-delay="0.5s" data-wow-duration="0.5s">
+					</a>
+		    </div>
+	#end
+#end                    
+			</div>
+		</div>
+</section>
