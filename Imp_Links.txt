@@ -1,0 +1,4 @@
+http://tutorials.jenkov.com/java-servlets/servlet-life-cycle.html
+http://proliferay.com/form-submission-example-in-spring-mvc/
+http://proliferay.com/liferay-7-portlet-creation-using-liferay-ide/
+https://www.tutorialspoint.com/jsp/jsp_life_cycle.htm
