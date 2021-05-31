@@ -1,8 +1,0 @@
-<!--<h3>$pdf_article_name.getData()</h3></br>-->
-<img alt="Image" src="$pdf_thumbnail.getData()" width="100px" height="100px"/></br></br>
-$pdf_article_description.getData()</br></br>
-<h4>
-    <a href="$pdf_upload.getData()" target="_blank">
-    	$languageUtil.format($locale, "download-x", "PDF")
-    </a>
-</h4>
